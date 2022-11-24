@@ -19,4 +19,17 @@
  const computerNumber = document.getElementById('computerNumber')
  const risultato = document.getElementById('risultato')
 
+ // Per stabilire il vincitore del gioco si deve ottenere il numero piu' alto 
+
+ // If and Else section 
+
+ if (numberRandomUsers > numberRandomComputer) {
+   numberGamers.append(numberRandomUsers)
+   computerNumber.append(numberRandomComputer)
+   computerNumber.append(numberRandomComputer)
+   risultato.append('Complimenti giocatore, hai vinto!')
+   console.log('Hai vinto!')
+
+ }
+
 
