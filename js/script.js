@@ -48,7 +48,7 @@
 
  const mailList = ["pierino@gmail.com", "idraulico@libero.it", "luchino@gmail.com", "uomosenzacapelli@hotmail.com", "cicciolino@gmail.com", "trenitaliainritardo@libero.it", "rickeilsuobaffo@roma.com"]
 
- const mailButton = document.getElementById('confirmEmail"')
+ const mailButton = document.getElementById('confirmEmail')
 
  //Functional button if and else
 
@@ -61,9 +61,9 @@
       const singleMail = document.getElementById('mail')
 
       if (mailList[i] == singleMail.value) {
-         correct = true
+         mailExact = true
        }
-   } if (correct) {
+   } if (mailExact) {
       correctMail.innerHTML = ('La tua mail è Valida!')
    } else {
       correctMail.innerHTML = ('La tua mail non è valida!')
