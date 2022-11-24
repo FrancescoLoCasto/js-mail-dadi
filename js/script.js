@@ -42,4 +42,14 @@
  console.log(numberRandomComputer)
 
 
+ //Mail Section
+
+ // Lista mail and Button const
+
+ const mailList = ["pierino@gmail.com", "idraulico@libero.it", "luchino@gmail.com", "uomosenzacapelli@hotmail.com", "cicciolino@gmail.com", "trenitaliainritardo@libero.it", "rickeilsuobaffo@roma.com"]
+
+ const mailButton = document.getElementById('confirmEmail"')
+
+
+
 
