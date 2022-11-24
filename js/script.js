@@ -12,8 +12,8 @@
 
  //Section numeri randomici 
 
- let numberRandomUsers = Math.floor(Math.random() * 6)
- let numberRandomComputer = Math.floor(Math.random() * 6)
+ let numberRandomUsers = Math.floor(Math.random() * 6) + 1
+ let numberRandomComputer = Math.floor(Math.random() * 6) + 1
 
  const numberGamers = document.getElementById('numberGamers')
  const computerNumber = document.getElementById('computerNumber')
@@ -49,6 +49,26 @@
  const mailList = ["pierino@gmail.com", "idraulico@libero.it", "luchino@gmail.com", "uomosenzacapelli@hotmail.com", "cicciolino@gmail.com", "trenitaliainritardo@libero.it", "rickeilsuobaffo@roma.com"]
 
  const mailButton = document.getElementById('confirmEmail"')
+
+ //Functional button if and else
+
+ mailButton.addEventListener("click", function () {
+   let mailExact= false
+   const correctMail = document.getElementById('correctMail')
+
+   for (let i = 0; i < mailList.length; i++) {
+      console.log(mailList[i])
+      const singleMail = document.getElementById('mail')
+
+      if (mailList[i] == singleMail.value) {
+         correct = true
+       }
+   } if (correct) {
+      correctMail.innerHTML = ('La tua mail è Valida!')
+   } else {
+      correctMail.innerHTML = ('La tua mail non è valida!')
+   }
+ })
 
 
 
