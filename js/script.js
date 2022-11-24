@@ -26,10 +26,20 @@
  if (numberRandomUsers > numberRandomComputer) {
    numberGamers.append(numberRandomUsers)
    computerNumber.append(numberRandomComputer)
-   computerNumber.append(numberRandomComputer)
    risultato.append('Complimenti giocatore, hai vinto!')
    console.log('Hai vinto!')
 
+ } else {
+   numberGamers.append(numberRandomUsers)
+   computerNumber.append(numberRandomComputer)
+   risultato.append('Looser, ha vinto il computer mi dispiace!')
+   console.log('Ha vinto il computer!')
  }
+
+ // Section console log 
+
+ console.log(numberRandomUsers)
+ console.log(numberRandomComputer)
+
 
 
